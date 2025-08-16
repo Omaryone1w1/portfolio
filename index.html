@@ -4,86 +4,83 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Omar Mohamed Fathallah | Portfolio</title>
-<style>
-    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f5f5f5; color: #333; }
-    header { background-color: #0d47a1; color: #fff; padding: 30px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin: 5px 0; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; background: #fff; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    h2 { color: #0d47a1; border-bottom: 2px solid #0d47a1; display: inline-block; padding-bottom: 5px; }
-    ul { list-style: none; padding: 0; }
-    ul li { margin-bottom: 10px; }
-    .projects div { margin-bottom: 20px; }
-    a { color: #0d47a1; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Dark Mode Toggle -->
+<div class="toggle-container">
+    <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+</div>
 
 <header>
-    <h1>Omar Mohamed Fathallah</h1>
-    <p>Cairo, Egypt | 01228725867 | <a href="mailto:omarnasa1w1@gmail.com">omarnasa1w1@gmail.com</a></p>
-    <p>
-        <a href="https://www.linkedin.com/in/omar-mohamed-fathallah-59912b335/">LinkedIn</a> |
-        <a href="https://github.com/Omaryone1w1">GitHub</a> |
-        <a href="https://www.kaggle.com/omarmohamed1w1">Kaggle</a>
-    </p>
+    <div class="header-content">
+        <div class="profile-pic">OM</div>
+        <h1>Omar Mohamed Fathallah</h1>
+        <p>Cairo, Egypt | 01228725867 | <a href="mailto:omarnasa1w1@gmail.com">omarnasa1w1@gmail.com</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/omar-mohamed-fathallah-59912b335/">LinkedIn</a> |
+            <a href="https://github.com/Omaryone1w1">GitHub</a> |
+            <a href="https://www.kaggle.com/omarmohamed1w1">Kaggle</a>
+        </p>
+    </div>
 </header>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
     <p>AI & Intelligent Systems Engineer-in-training with hands-on experience in Deep Learning, Machine Learning, CNN, RNN, ANN, and IoT projects. Delivered high-quality AI solutions, debugging and optimizing models from scratch, and presenting results in IEEE competitions and workshops.</p>
 </section>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Helwan National University</strong> — Bachelor in Intelligent Systems Engineering (Expected 2027, GPA: 3.4)</li>
-        <li>Relevant Coursework: AI, Machine Learning, Deep Learning, CNN, RNN, Embedded Systems, IoT Development</li>
-    </ul>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+        <h3>Python</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+    </div>
+    <div class="skill">
+        <h3>C / C++ / Java</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+    </div>
+    <div class="skill">
+        <h3>HTML / CSS / JS</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+    </div>
+    <div class="skill">
+        <h3>TensorFlow / PyTorch</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+    </div>
 </section>
 
-<section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>AI Style Transfer</h3>
+        <p>Transformed 50+ real photos into stylized 4K images using PyTorch & TensorFlow Hub. Enhanced results with OpenCV.</p>
+    </div>
+    <div class="project-card">
+        <h3>Smart Car Parking System</h3>
+        <p>Python & Arduino system detecting parking status, triggering LEDs and buzzer alerts with zero errors during testing.</p>
+    </div>
+    <div class="project-card">
+        <h3>Embedded Smart Trash Bin</h3>
+        <p>Classified metal vs other waste using Atmega32 microcontrollers with LCD & ultrasonic feedback. Automated lid and real-time fill display.</p>
+    </div>
+</section>
+
+<section id="experience">
     <h2>Experience & Certifications</h2>
     <ul>
-        <li><strong>HCIA AI v4 Certification — NTI (Jul-Aug 2025)</strong>: Completed 80 hours AI training, developed AI Style Transfer project, scored 984/1000.</li>
-        <li><strong>IoT & Soft Skills Training — NTI (Ongoing Aug-Sep 2025)</strong>: Built Smart Car Parking System using Python & Arduino.</li>
-        <li><strong>IEEE Student Branch Activities</strong>: Developed CNN, ANN, RNN models, presented in workshops.</li>
+        <li>HCIA AI v4 Certification — NTI (Jul-Aug 2025): Completed 80 hours AI training, developed AI Style Transfer project, scored 984/1000.</li>
+        <li>IoT & Soft Skills Training — NTI (Aug-Sep 2025): Built Smart Car Parking System.</li>
+        <li>IEEE Student Branch Activities: Developed CNN, ANN, RNN models, presented in workshops.</li>
         <li>Certifications: Machine Learning Fundamentals — DataCamp, Python Basics — MaharaTech, IEEE Student Branch Certification (Upcoming)</li>
     </ul>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Programming & Tools:</strong> Python, C, C++, Java, JavaScript, HTML, CSS, SQL, MATLAB, Arduino, R, Bash, TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, Seaborn, Matplotlib, Git, GitHub, Kaggle, Jupyter Notebook, Excel</li>
-        <li><strong>Embedded Systems & IoT:</strong> Atmega32, Arduino IDE, Sensors (Ultrasonic, IR, Laser), Actuators, Real-time Data Acquisition</li>
-        <li><strong>AI & Machine Learning:</strong> Deep Learning, ML, Style Transfer, Image Classification, Recommendation Systems, CNN, RNN, ANN, Data Analysis</li>
-        <li><strong>Soft Skills:</strong> Team Collaboration, Debugging & Optimization, Presentation, Project Planning, Organizing tasks, Problem-solving, Continuous Learning</li>
-    </ul>
-</section>
-
-<section class="projects">
-    <h2>Projects</h2>
-    <div>
-        <h3>AI Style Transfer (NTI Final Project)</h3>
-        <p>Transformed 50+ real photos into stylized 4K images using PyTorch & TensorFlow Hub. Enhanced results using OpenCV.</p>
-    </div>
-    <div>
-        <h3>Embedded Smart Trash Bin</h3>
-        <p>Classified metal vs other waste using Atmega32 microcontrollers with LCD & ultrasonic feedback. Automated lid and real-time bin fill display.</p>
-    </div>
-    <div>
-        <h3>Stair Master with Arduino & Laser Sensor</h3>
-        <p>Miniature stair-climbing device with 3 speed modes, optimized response time by 30%.</p>
-    </div>
-    <div>
-        <h3>Smart Car Parking System</h3>
-        <p>Python & Arduino system detecting parking status, triggering LEDs and buzzer alerts with zero errors during testing.</p>
-    </div>
-</section>
-
-<section>
+<section id="languages">
     <h2>Languages</h2>
     <ul>
         <li>Arabic (Native)</li>
@@ -92,5 +89,10 @@
     </ul>
 </section>
 
+<footer>
+    <p>© 2025 Omar Mohamed Fathallah. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
